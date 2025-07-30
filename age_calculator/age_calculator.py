@@ -27,12 +27,14 @@ if (birth_date_dt_object.day, birth_date_dt_object.month) == (current_time.day, 
   print("\n\U0001F973 \U0001F389 HAPPY BIRTHDAY!!!\U0001F389 \U0001F973") 
 
 print(f"""\nYou are {user_age_years:.2f} years old. 
-      \n\nThis is equivalent to: \n\n  * {user_age_months:.2f} months 
+      \n\nThis is equivalent to: 
+      \n\n  * {user_age_months:.2f} months 
       \n\n  * {user_age_weeks:.2f} weeks 
       \n\n  * {user_age_days:,.2f} days 
       \n\n  * {user_age_hours:,.2f} hours 
       \n\n  * {user_age_minutes:,.2f} minutes 
       \n\n  * {user_age_seconds:,.2f} seconds""")
+
 
 
 
