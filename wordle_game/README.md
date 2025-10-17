@@ -1,0 +1,3 @@
+Programmed a simplified version of Wordle using Python where the player attempts to guess a five letter word in six attempts. The game tells you when letters are in the correct position, if they are in the word, but misplaced, or not in the word at all.
+
+To create this game, a word bank of 3,103 5-letter words was used. Source: <script src="https://gist.github.com/shmookey/b28e342e1b1756c4700f42f17102c2ff.js"></script>.
