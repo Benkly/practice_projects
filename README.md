@@ -1,3 +1,3 @@
-## Small Python Hobby Projects
+## Small Python Hobby Scripts
 
-A collection of small hobby project programs written in Python to practice my skills.
+A collection of small hobby project scripts written in Python to practice skills. 
