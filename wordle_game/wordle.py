@@ -2,25 +2,17 @@ import random
 
 word_bank = []
 
+# parse file, strip whitespace, convert to uppercase and add each word to word_bank
 with open("word_bank.txt", "r") as file: 
     for line in file:
-        word_bank.append(line.strip().upper()) # parse file, strip whitespace, convert to uppercase and add each word to word_bank
+        word_bank.append(line.strip().upper()) 
         
-chosen_word = "ASDFG" #random.choice(word_bank)
+chosen_word = random.choice(word_bank)
 
 misplaced_letters = []
 incorrect_letters = []
 attempts = 6
 current_attempt = 1
-
-def count_letters(word):   # helper function to count occurrences of each letter in a guessed word
-  letter_count = {}
-  for letter in word:
-    if letter in letter_count:
-      letter_count[letter] += 1
-    else:
-      letter_count[letter] = 1
-  return letter_count
 
 print("""-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
                                              WORDLE
@@ -52,7 +44,7 @@ while current_attempt <= attempts:
   index = 0
   game_state = "_____" # initialize game state with underscores for unguessed letters
   
-  guess_letters = {} # initialize dictionary to track number of occurrences of each letter. this will be incremented each pass through the loop for a running total to ensure the list of misplaced and incorrect letters remain accurate
+  guess_letters = {} # dictionary to track number of occurrences of each letter. incremented each pass through the loop for a running total to ensure the list of misplaced letters remain accurate
   
   # process the guess
   
